@@ -1,0 +1,263 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    padding-top: 85px;
+}
+
+/* NAVBAR */
+.top-line {
+    background-color: #d5f36b;
+    height: 8px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+}
+
+.navbar-custom {
+    background: linear-gradient(to right, #a8d94b, #003366) !important;
+    top: 8px;
+}
+
+.navbar-brand {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 55px;
+    object-fit: contain;
+}
+
+.brand-text {
+    margin-left: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 8px 15px;
+    margin: 0 5px;
+    position: relative;
+    transition: all .3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 2px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width .3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: calc(100% - 30px);
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d5f36b !important;
+    transform: translateY(-2px);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* FORMULARIO */
+.registro-section {
+    padding: 45px 15px;
+    min-height: 650px;
+}
+
+h1 {
+    color: #003366;
+    font-weight: bold;
+}
+
+.descripcion {
+    color: #555;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.formulario {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 520px;
+    margin: auto;
+    border: 3px solid #d5f36b;
+    box-shadow: 0 5px 15px rgba(0, 51, 102, .18);
+}
+
+.formulario label {
+    color: #003366;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.form-control {
+    padding: 11px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+}
+
+.form-control:focus {
+    border-color: #a8d94b;
+    box-shadow: 0 0 0 .2rem rgba(168, 217, 75, .25);
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-input {
+    padding-right: 45px;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.boton {
+    background: linear-gradient(to right, #a8d94b, #003366);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.boton:hover {
+    background: linear-gradient(to right, #003366, #a8d94b);
+    transform: translateY(-2px);
+}
+
+.formulario a {
+    color: #003366;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(to bottom, #003366, #0784a3);
+    color: white;
+    padding: 40px 0 20px;
+    border-top: 8px solid #d5f36b;
+    margin-top: 30px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    color: #d5f36b;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(213, 243, 107, .3);
+    padding-bottom: 5px;
+}
+
+.footer-section p {
+    color: #e0e0e0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+/* ASISTENTE */
+#chatModal .modal-header {
+    background: linear-gradient(to right, #a8d94b, #003366);
+    color: white;
+    border-bottom: 4px solid #d5f36b;
+}
+
+#chatModal .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+#chatBox {
+    height: 300px;
+    overflow-y: auto;
+    background: white;
+    border: 2px solid #d5f36b;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+#chatModal .btn-primary {
+    background: linear-gradient(to right, #a8d94b, #003366);
+    border: none;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        background-color: #003366;
+        padding: 15px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center;
+    }
+
+    .brand-text {
+        font-size: 14px;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+    .navbar-brand img {
+        height: 42px;
+    }
+}
