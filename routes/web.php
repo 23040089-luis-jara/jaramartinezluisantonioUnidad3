@@ -20,7 +20,6 @@ Route::post('/registro', [RegistroController::class, 'store'])
 
 
 
-
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SessionController;
 
