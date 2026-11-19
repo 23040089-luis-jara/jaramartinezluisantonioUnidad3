@@ -1,0 +1,183 @@
+
+/* =========================================
+   CONTENIDO DE REPORTES
+========================================= */
+
+.contenido-reportes {
+    flex: 1;
+    padding-top: 35px;
+    padding-bottom: 60px;
+}
+
+.titulo-reportes {
+    color: #003366;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.titulo-reportes::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: #BF9B4C;
+    margin: 12px auto;
+    border-radius: 5px;
+}
+
+.descripcion-reportes {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+.formulario-reporte {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    border: none;
+    border-top: 5px solid #0784a3;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.formulario-reporte .card-header {
+    background: linear-gradient(90deg, #0784a3, #003366);
+    color: white;
+    padding: 18px 25px;
+    border: none;
+}
+
+.formulario-reporte .card-header h4 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.formulario-reporte .card-body {
+    padding: 30px;
+}
+
+.formulario-reporte .form-label {
+    color: #003366;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.formulario-reporte .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 7px;
+    padding: 12px;
+    font-size: 15px;
+}
+
+.formulario-reporte .form-control:focus {
+    border-color: #0784a3;
+    box-shadow: 0 0 0 0.2rem rgba(7, 132, 163, 0.15);
+}
+
+.formulario-reporte textarea {
+    resize: vertical;
+}
+
+.formulario-reporte input[readonly] {
+    background-color: #edf1f5;
+    color: #555;
+}
+
+/* =========================================
+   BOTÓN REGISTRAR
+========================================= */
+
+.btn-registrar {
+    background: linear-gradient(90deg, #0784a3, #003366);
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    font-weight: bold;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.btn-registrar:hover {
+    background: #BF9B4C;
+    color: #003366;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   HISTORIAL DE REPORTES
+========================================= */
+
+.titulo-historial {
+    color: #003366;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #BF9B4C;
+}
+
+.tabla-reportes {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 51, 102, 0.10);
+    padding: 10px;
+}
+
+.tabla-reportes table {
+    margin-bottom: 0;
+}
+
+.tabla-reportes thead th {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.tabla-reportes tbody td {
+    padding: 14px;
+    color: #444;
+    font-size: 14px;
+}
+
+.tabla-reportes tbody tr:hover {
+    background-color: #f0f7fa;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .contenido-reportes {
+        padding-top: 25px;
+    }
+
+    .titulo-reportes {
+        font-size: 24px;
+    }
+
+    .descripcion-reportes {
+        font-size: 14px;
+    }
+
+    .formulario-reporte .card-body {
+        padding: 20px;
+    }
+
+    .titulo-historial {
+        font-size: 21px;
+    }
+
+    .tabla-reportes {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,347 @@
+/* ===== GENERAL ===== */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f5;
+    padding-top: 75px;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar-custom {
+    background: linear-gradient(to right, #a8d94b, #003366) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.top-line {
+    background-color: #d5f36b;
+    height: 8px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+}
+
+.navbar-brand {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 60px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.brand-text {
+    margin-left: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    color: white !important;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 2px;
+    width: 0;
+    height: 2px;
+    background-color: #d5f36b;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: calc(100% - 30px);
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d5f36b !important;
+    transform: translateY(-2px);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="%23FFFFFF" stroke-width="2" stroke-linecap="round" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+
+/* ===== FORMULARIO ===== */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 55px 20px;
+    min-height: 650px;
+}
+
+.form-section {
+    width: 100%;
+    max-width: 510px;
+    padding: 35px 40px;
+    background-color: white;
+    border-radius: 15px;
+    border-top: 6px solid #a8d94b;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.form-section:hover {
+    transform: translateY(-3px);
+}
+
+.login-icon {
+    width: 75px;
+    height: 75px;
+    background-color: #edf8d9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+}
+
+.login-icon span {
+    font-size: 38px;
+}
+
+.form-section h2 {
+    color: #003366;
+    font-size: 29px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-section h4 {
+    color: #78a92f;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.descripcion {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.form-section label {
+    display: block;
+    text-align: left;
+    color: #003366;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #a8d94b;
+    box-shadow: 0 0 0 0.2rem rgba(168,217,75,0.25);
+}
+
+.btn-login {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(to right, #a8d94b, #003366);
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background: linear-gradient(to right, #003366, #75b83d);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.form-section a {
+    color: #003366;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.form-section a:hover {
+    color: #75a832;
+    text-decoration: underline;
+}
+
+.registro-link {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background: linear-gradient(to bottom, #003366, #75b83d);
+    color: white;
+    padding: 40px 0 20px;
+    border-top: 8px solid #d5f36b;
+    margin-top: 30px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    color: #d5f36b;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(213,243,107,0.5);
+    padding-bottom: 8px;
+}
+
+.footer-section p {
+    color: white;
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.footer-section p:hover {
+    color: #d5f36b;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-size: 14px;
+    color: white;
+}
+
+/* ===== MODAL ASISTENTE ===== */
+
+#chatModal .modal-content {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+}
+
+#chatModal .modal-header {
+    background: linear-gradient(to right, #a8d94b, #003366);
+    color: white;
+    border-bottom: 4px solid #d5f36b;
+}
+
+#chatModal .modal-title {
+    font-weight: 600;
+}
+
+#chatModal .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+#chatModal .modal-body {
+    background-color: #f4f7f5;
+    padding: 20px;
+}
+
+#chatBox {
+    height: 300px;
+    overflow-y: auto;
+    background: white;
+    border: 2px solid #a8d94b;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+#mensaje {
+    border-radius: 25px;
+}
+
+#chatModal .modal-footer {
+    background: white;
+}
+
+#chatModal .btn-primary {
+    background: linear-gradient(to right, #a8d94b, #003366);
+    border: none;
+    border-radius: 25px;
+    padding: 8px 25px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 992px) {
+
+    .navbar-nav {
+        background-color: #003366;
+        padding: 15px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center;
+        margin: 5px 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .brand-text {
+        font-size: 13px;
+        white-space: normal;
+    }
+
+    .navbar-brand img {
+        height: 45px;
+    }
+
+    .form-section {
+        padding: 25px 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
